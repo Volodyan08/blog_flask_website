@@ -1,3 +1,6 @@
+{% extends "base.html" %}
+
+{% block content %}
 <h1>Hellow World</h1>
 
 <p>This is my first webpage</p>
@@ -6,11 +9,4 @@
 
 <p>{{stuff|title}}</p>
 
-<h3>Favourite Pizza</h3>
-
-{% for pizza in favourite_pizza %}
-    {{ pizza }}<br/>
-{% endfor %}
-
-<br/><br/>
-{{ favourite_pizza.1 }}
+{% endblock %}
